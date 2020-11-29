@@ -1,0 +1,23 @@
+{
+  "name": "nodeec",
+  "version": "1.0.0",
+  "description": "Nodejs",
+  "main": "sum.js",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Geothomas1/NodeEC.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Geothomas1/NodeEC/issues"
+  },
+  "homepage": "https://github.com/Geothomas1/NodeEC#readme"
+}
