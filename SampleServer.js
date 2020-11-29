@@ -18,12 +18,18 @@ http.createServer(function (req,res)
         res.end()
     })
     
-}else
+}else if(req.url==='/signupaction')
+{
+  
+    res.write("From Data submitted")
+    res.end()
+}
+else
 {
     res.writeHead(404,{'Content-Type':'text/html'})
     res.write("Error")
     res.end()
 }
-}).listen(7001, ()=>
+}).listen(7003, ()=>
     console.log("Server start Running let start to do ...................")
 )
