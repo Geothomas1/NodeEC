@@ -24,7 +24,7 @@ function person(name,age,place)
 var Geo=new person("Geo Thomas",23,"Kottayam")
 Geo.college="CET"
 Geo.dispaly()
-*/
+
 class Sample{
     sanplehello()
     {
@@ -47,3 +47,14 @@ class Hello extends Sample
 let obj=new Hello(10,20)
 obj.hello()
 obj.sanplehello()
+
+var dt=new Date()
+for(i=0;i<1000;i++)
+{
+    console.log("Loop")
+}
+
+var diff=new Date()-dt
+console.log(diff)
+
+*/
