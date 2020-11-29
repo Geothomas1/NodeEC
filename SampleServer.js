@@ -10,15 +10,20 @@ http.createServer(function (req,res)
         res.write(data)
         res.end()
     })
-} else if(req.url==='/login')
+} else if(req.url==='/signup')
 {
-    res.write("login")
-    res.end()
+    fs.readFile('signup.html',(err,data)=>{
+        res.writeHead(200,{'Content-Type':'text/html'})
+        res.write(data)
+        res.end()
+    })
+    
 }else
 {
+    res.writeHead(404,{'Content-Type':'text/html'})
     res.write("Error")
     res.end()
 }
-}).listen(7001,function (){
+}).listen(7001, ()=>
     console.log("Server start Running let start to do ...................")
-})
+)
