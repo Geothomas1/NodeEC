@@ -3,13 +3,18 @@ const app=express()
 const path=require('path')
 
 app.use((req,res,next)=>{
-    res.send("Hello use")
+    console.log("Hello")
     next()
 })
 
-app.get('/signup',(req,res)=>{
+app.get('/signup',(req,res,next)=>{
    
     res.sendFile(path.join(__dirname,'signup.html'))
+    next()
+})
+
+app.use((req,res)=>{
+    console.log("End....")
 })
 app.post('/signup',(req,res)=>{
     res.send("Data send sucessfully...........")
