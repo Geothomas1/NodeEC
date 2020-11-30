@@ -2,11 +2,15 @@ const express=require('express')
 const app=express()
 const path=require('path')
 
-app.get('/',function (req,res){
-    res.send("Hello")
+app.get('/signup',(req,res)=>{
+   
+    res.sendFile(path.join(__dirname,'signup.html'))
+})
+app.post('/signup',()=>{
+    res.send("Data send sucessfully...........")
 })
 app.get('/about',(req,res)=>{
-    res.sendFile(path.join(__dirname,'signup.html'))
+    res.send("Hello About Page")
 })
 app.listen(7000,()=>{
     console.log("Server started......")
