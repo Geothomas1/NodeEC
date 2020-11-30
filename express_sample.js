@@ -2,6 +2,11 @@ const express=require('express')
 const app=express()
 const path=require('path')
 
+app.use((req,res,next)=>{
+    res.send("Hello use")
+    next()
+})
+
 app.get('/signup',(req,res)=>{
    
     res.sendFile(path.join(__dirname,'signup.html'))
