@@ -1,4 +1,12 @@
 {{#each values}}
-<h1>{{this}}</h1>
+<h1>{{@index}}.{{this}}</h1>
 
 {{/each}}
+
+{{#if person.admin}}
+
+<h1>{{person.tcomment}}</h1>
+{{else}}
+<h1>{{person.fcomment}}</h1>
+
+{{/if}}
