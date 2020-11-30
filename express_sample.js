@@ -6,7 +6,7 @@ app.get('/signup',(req,res)=>{
    
     res.sendFile(path.join(__dirname,'signup.html'))
 })
-app.post('/signup',()=>{
+app.post('/signup',(req,res)=>{
     res.send("Data send sucessfully...........")
 })
 app.get('/about',(req,res)=>{
