@@ -3,7 +3,8 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'github' });
+  const values=['Geo','Manuel','Faizal','Febin','Anna','Pranoy','Anajan','Jitho','Akash']
+  res.render('index', {values});
 });
 
 module.exports = router;
