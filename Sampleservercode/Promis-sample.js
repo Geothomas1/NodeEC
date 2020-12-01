@@ -5,7 +5,15 @@ function add(num1,num2,callback){
     }
     callback(num1+num2,err)
 }
-add(0,30,(sum,err)=>{
+function muliplay(num1,num2,callback)
+{
+    callback(num1*num2)
+}
+function division(num1,num2,callback)
+{
+    callback(num1/num2)
+}
+add(2,30,(sum,err)=>{
     if(err)
     {
     console.log("First number is zero")
@@ -13,5 +21,12 @@ add(0,30,(sum,err)=>{
     else
 {    
 console.log(sum)
+muliplay(sum,sum,(product)=>{
+    console.log(product)
+    division(product,2,(finalresult)=>
+    {
+        console.log(finalresult)
+    })
+})
 }
 })
