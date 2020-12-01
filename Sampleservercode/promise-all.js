@@ -15,6 +15,12 @@ function getMobile(){
     })
 }
 
-Promise.all([getName(),getMobile()]).then((result)=>{
-    console.log(result)
-})
+//Promise.all([getName(),getMobile()]).then((result)=>{
+  //  console.log(result)
+//})
+
+function getUser(){
+    let name=getName()
+    console.log(name)
+}
+getUser()
