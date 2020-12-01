@@ -5,6 +5,13 @@ function add(num1,num2,callback){
     }
     callback(num1+num2,err)
 }
-add(10,30,(sum,err)=>{
-    console.log(sum)
+add(0,30,(sum,err)=>{
+    if(err)
+    {
+    console.log("First number is zero")
+    }
+    else
+{    
+console.log(sum)
+}
 })
