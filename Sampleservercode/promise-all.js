@@ -19,8 +19,8 @@ function getMobile(){
   //  console.log(result)
 //})
 
-function getUser(){
-    let name=getName()
+async function getUser(){
+    let name=await getName()
     console.log(name)
 }
 getUser()
